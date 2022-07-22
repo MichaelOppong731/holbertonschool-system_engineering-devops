@@ -26,4 +26,5 @@
     <p><img src="https://github.com/DanielaIH/holbertonschool-system_engineering-devops/blob/main/0x09-web_infrastructure_design/IS_0.png?raw=true"><br></p>
     <p><img src="https://github.com/DanielaIH/holbertonschool-system_engineering-devops/blob/main/0x09-web_infrastructure_design/IS_1.png?raw=true"><br></p>
     <p><img src="https://github.com/DanielaIH/holbertonschool-system_engineering-devops/blob/main/0x09-web_infrastructure_design/IS_2.png?raw=true"><br></p>
+    <p>Authors: Daniela Ibarra - Hector Ordoñez - Robert Ortega</p>
 </div>
