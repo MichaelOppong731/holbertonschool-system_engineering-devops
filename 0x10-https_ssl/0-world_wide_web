@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # script that will display information about subdomains.
 row_output(){
 dig "$2.$1" |
