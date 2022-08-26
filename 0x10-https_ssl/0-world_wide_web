@@ -9,8 +9,8 @@ if [ -z "$2" ]
 then
 	SUBDOMAINS='www lb-01 web-01 web-02'
 	for subdomain in $SUBDOMAINS; do
-	row_output $1 $subdomain
+	row_output "$1" "$subdomain"
 done
 else
-	row_output $1 $2
+	row_output "$1" "$2"
 fi
