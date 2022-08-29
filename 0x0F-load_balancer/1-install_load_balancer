@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# script that configures a new Ubuntu machine to respect above requirements
+sudo apt -y update
+sudo apt-get -y install haproxy
+sudo sed -i "/errorfile 504 \/etc\/haproxy\/errors\/504.http/a listen firstbalance \n\t bind *:80 \n\t balance roundrobin \n\t server 4427-web-01 3.93.184.98:80 check \n\t server 4427-web-02 54.221.46.19:80 check" /etc/haproxy/haproxy.cfg
+sudo service haproxy restart
