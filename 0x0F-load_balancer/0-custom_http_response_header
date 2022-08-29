@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# script that configures a brand new Ubuntu machine
 sudo apt install nginx
 awk '{if ($0 ~ /location \// && $0 !~ /#/ ) print $0, "\n add_header X-Served-By \$hostname;"; else print $0}' /etc/nginx/sites-available/default > ./default_temp
 sudo mv -f ./default_temp /etc/nginx/sites-available/default
