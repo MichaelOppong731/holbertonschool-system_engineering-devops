@@ -12,8 +12,8 @@ if __name__ == "__main__":
 
     id_e = int(argv[1])
     api_url = "https://jsonplaceholder.typicode.com/"
-    user = requests.get(f"{api_url}users/{id_e}").json()
-    todos = requests.get(f"{api_url}users/{id_e}/todos").json()
+    user = requests.get("{}users/{}".format(api_url, id_e)).json()
+    todos = requests.get("{}users/{}/todos".format(api_url, id_e)).json()
 
     for x in todos:
         n_tasks += 1
@@ -21,7 +21,7 @@ if __name__ == "__main__":
             done_tasks += 1
             tasks.append(x["title"])
 
-    print(f'Employee {user["name"]} is done with tasks' +
-          f'({done_tasks}/{n_tasks}):')
+    print("Employee {} is done with tasks({}/{}):".
+            format(user["name"], done_tasks, n_tasks))
     for t in tasks:
         print("\t", t)
