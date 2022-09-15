@@ -22,6 +22,6 @@ if __name__ == "__main__":
             tasks.append(x["title"])
 
     print("Employee {} is done with tasks({}/{}):".
-            format(user["name"], done_tasks, n_tasks))
+          format(user["name"], done_tasks, n_tasks))
     for t in tasks:
         print("\t", t)
